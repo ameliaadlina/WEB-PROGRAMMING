@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2e9e4;
+  color: #222;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 30px; /* Adjust the space between header and form */
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-left: 20px; /* Shift logo to the right */
+}
+
+/* Navigation Buttons Styling */
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-btn {
+  background-color: #5b4d43;
+  color: white;
+  padding: 15px 30px; /* Fixed padding */
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem; /* Fixed font size */
+  width: 200px; /* Fixed width */
+  height: 50px; /* Fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap; /* Prevent text from wrapping */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add smooth transition */
+}
+
+/* Hover Effect */
+.nav-btn:hover {
+  background-color: #7b5a48; /* Darker color on hover */
+  transform: scale(1.05); /* Slightly enlarge the button when hovered */
+}
+
+.nav-btn.active {
+  background-color: #3b322b;
+}
+
+/* Container Styling */
+.container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto; /* Center container */
+  margin-bottom: 40px; /* Add margin at the bottom to create space between the container and the footer */
+}
+
+/* Header in Container */
+.container h1 {
+  font-size: 2.5rem;
+  color: #000000;
+}
+
+/* Paragraph in Container */
+.container p {
+  font-size: 1.2rem;
+  color: #5b4d43;
+  margin-bottom: 20px;
+}
+
+/* Feedback Form Styling */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Input Labels */
+.container label {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Input Fields */
+.container input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #a84300;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f6efe9;
+}
+
+/* Textarea Specific Styling */
+.container textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Button Styling */
+.container button {
+  width: 100px; /* Adjust the width of the button */
+  padding: 10px 20px; /* Adjust padding for size */
+  background-color: #5b4d43;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease; /* Add transform for smooth effect */
+  display: block; /* Ensure it's treated as a block element */
+  margin-left: auto; /* Centering by setting left margin */
+  margin-right: auto; /* Centering by setting right margin */
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #7f2f00; /* Darker color on hover */
+}
+
+button:active {
+  background-color: #4e3a2e; /* Darker color when the button is pressed */
+  transform: scale(0.95); /* Slightly reduce size to create a pressed effect */
+}
+
+/* Success and Error Message Styling */
+#successMessage, #errorMessage {
+  display: block; /* Ensure the messages are block-level elements */
+  font-weight: bold;
+  margin-top: 20px; /* Space between the button and messages */
+}
+
+#successMessage {
+  color: green;
+}
+
+#errorMessage {
+  color: red;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px; /* Less padding on smaller screens */
+  }
+
+  .nav-btn {
+    font-size: 0.9rem;  /* Smaller font size for smaller screens */
+    width: auto;  /* Auto width for buttons */
+    padding: 12px 25px;  /* Adjust button padding */
+  }
+}
+
+/* Footer Styling */
+footer {
+  background-color: #5b4d43;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  position: fixed; /* Fixes footer at the bottom */
+  width: 100%; /* Ensures footer spans the full width of the screen */
+  bottom: 0; /* Positions it at the very bottom of the screen */
+  margin: 0; /* Removes any extra space */
+}

@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2e9e4;
+  color: #222;
+} /* DON'T TOUCH HERE */
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 30px; /* Adjust the space between header and form */
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-left: 20px; /* Shift logo to the right */
+}
+
+/* Navigation Buttons Styling */
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-btn {
+  background-color: #5b4d43;
+  color: white;
+  padding: 15px 30px; /* Fixed padding */
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem; /* Fixed font size */
+  width: 200px; /* Fixed width */
+  height: 50px; /* Fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap; /* Prevent text from wrapping */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add smooth transition */
+}
+
+/* Hover Effect */
+.nav-btn:hover {
+  background-color: #7b5a48; /* Darker color on hover */
+  transform: scale(1.05); /* Slightly enlarge the button when hovered */
+}
+
+.nav-btn.active {
+  background-color: #3b322b;
+}
+
+/* About Section Layout */
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 40px;
+  align-items: center;
+}
+
+.about-title {
+  font-size: 3em;
+  color: #a84300;
+  margin-bottom: 20px;
+}
+
+.about-desc {
+  font-size: 1.1em;
+  color: #a84300;
+  line-height: 1.6;
+}
+
+/* About Text Styling */
+.about-text h1 {
+  font-size: 4.5em;
+  margin-bottom: 10px;
+  margin-top: -20px; /* Move the text up */
+}
+
+.about-text p {
+  margin-top: 20px; /* Add space above the paragraph to move it down */
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px; /* Ensure space after the paragraph */
+}
+
+.about-image img {
+  max-width: 50%;
+  height: auto;
+  margin-left: 130px; /* Move image to the right */
+}
+
+.about-text span {
+  font-weight: bold;
+}
+
+/* Social Icons */
+.connect-text {
+  margin-top: 40px; /* Reduced margin to bring it closer */
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.social-icons {
+  margin-top: 10px; /* Reduce space between the text and icons */
+}
+
+.social-icons a {
+  font-size: 2.8em;
+  color: black;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #5b4d43;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+}
+
+/* Project Section Styling */
+.project-container {
+  border: 1px solid #aaa;
+  margin: 30px;
+  padding: 40px;
+  background-color: #f6efe9;
+}
+
+.project-intro h1 {
+  font-size: 3em;
+  color: #a84300;
+  margin-bottom: 10px;
+}
+
+.project-intro p {
+  color: #a84300;
+  margin-bottom: 30px;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project-card {
+  background-color: #fefefe;
+  padding: 10px;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.project-card h3 {
+  margin: 5px 0;
+  color: #000;
+}
+
+.project-card p.desc {
+  font-size: 0.9em;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container, .project-grid {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    text-align: center;
+  }
+}

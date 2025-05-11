@@ -1,0 +1,281 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2e9e4;
+  color: #222;
+} /* DON'T TOUCH HERE */
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 30px; /* Adjust the space between header and form */
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-left: 20px; /* Shift logo to the right */
+}
+
+/* Navigation Buttons Styling */
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-btn {
+  background-color: #5b4d43;
+  color: white;
+  padding: 15px 30px; /* Fixed padding */
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem; /* Fixed font size */
+  width: 200px; /* Fixed width */
+  height: 50px; /* Fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap; /* Prevent text from wrapping */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add smooth transition */
+}
+
+/* Hover Effect */
+.nav-btn:hover {
+  background-color: #7b5a48; /* Darker color on hover */
+  transform: scale(1.05); /* Slightly enlarge the button when hovered */
+}
+
+.nav-btn.active {
+  background-color: #3b322b;
+}
+
+/* Main Section Styling */
+main {
+  padding: 40px;
+  display: flex;
+  justify-content: center; /* Center the grid horizontally */
+  align-items: center; /* Center the grid vertically */
+  flex-direction: column; /* Stack the elements vertically */
+  min-height: 0px; /* Ensure the content takes up at least full viewport height */
+}
+
+.project-intro {
+  margin-top: -100px; /* Remove any margin above the section */
+  padding-top: 0; /* Remove padding above the text */
+  text-align: center; /* Center the text horizontally */
+}
+
+.project-intro h1 {
+  font-size: 4.5rem;
+  color: #000000;
+  margin-bottom: 10px; /* Optional: Adjust the spacing below the title */
+}
+
+.project-intro p {
+  font-size: 1.2rem;
+  color: #000000;
+  margin-top: 0; /* Remove any margin above the paragraph */
+  margin-bottom: 50px;
+}
+
+/* Project Grid Styling */
+.project-grid {
+  display: flex;
+  justify-content: center; /* Center all the project cards horizontally */
+  gap: 40px; /* Space between project cards */
+}
+
+/* Individual Project Cards Styling */
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 600px; /* Set a fixed width for consistency */
+  padding: 20px; /* Padding for the content inside cards */
+  text-align: center; /* Center the text inside the card */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  font-size: 1.8rem;
+  color: #5b4d43;
+  padding: 10px 20px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.project-card .desc {
+  font-size: 1rem;
+  color: #888;
+  padding: 0 20px;
+  margin-top: 0;
+  line-height: 1.4;
+}
+
+.project-card .desc em {
+  font-style: italic;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slideshow-container2 {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Hide the images by default */
+.mySlides2 {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;  /* Adjusted for larger arrow size */
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.5);  /* Transparent background */
+  padding: 16px;  /* Size of the arrow button */
+  z-index: 100;  /* Ensure the arrows are above images */
+}
+
+/* Position the "next" button to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "prev" button to the left */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);  /* Darker background on hover */
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Footer Styling */
+footer {
+  background-color: #5b4d43;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .nav-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card img {
+    height: auto;
+  }
+}
