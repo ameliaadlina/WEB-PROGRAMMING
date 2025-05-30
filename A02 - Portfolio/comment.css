@@ -180,8 +180,4 @@ footer {
   text-align: center;
   color: white;
   font-size: 1rem;
-  position: fixed; /* Fixes footer at the bottom */
-  width: 100%; /* Ensures footer spans the full width of the screen */
-  bottom: 0; /* Positions it at the very bottom of the screen */
-  margin: 0; /* Removes any extra space */
 }
